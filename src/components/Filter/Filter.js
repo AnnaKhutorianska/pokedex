@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { getPokemonTypes } from "../../api";
+import filterIcon from '../../assets/filterIcon.png'; 
 
 import {
   FilterIcon,
@@ -26,7 +27,7 @@ const Filter = ({ setSelectedType, selectedType }) => {
     <>
       <FilterIconWrapper>
         <FilterIcon
-          src="/filterIcon.png"
+          src={filterIcon}
           alt="filter icon"
           onClick={() => setIsOpen((prev) => !prev)}
         />
